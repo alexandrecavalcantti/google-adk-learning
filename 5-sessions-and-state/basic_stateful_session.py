@@ -19,18 +19,17 @@ async def main():
     # 'initial_state' é um dicionário que define o state inicial da sessão.
     # O agente usará estes dados como seu contexto inicial.
     initial_state = {
-        'user_name': 'Brandon Hancock',
+        'user_name': 'Alexandre Cavalcanti',
         'user_preferences': """
-            I like to play Pickleball, Disc Golf, and Tennis.
-            My favorite food is Mexican.
-            My favorite TV show is Game of Thrones.
-            Loves it when people like and subscribe to his YouTube channel.
+            Eu gosto de jogar futsal e de programar.
+            Minhas comidas favoritas são comida japonesa, churrasco, pizza e hamburguer.
+            Minha série favorita é Outer Banks.
         """,
     }
 
     # Cada sessão de conversa é unicamente identificada por 'app_name', 'user_id', e 'session_id'.
-    APP_NAME = 'Brandon Bot'
-    USER_ID = 'brandon_hancock'
+    APP_NAME = 'Alexandre Bot'
+    USER_ID = 'alexandrecavalcanti'
     SESSION_ID = str(uuid.uuid4())
     stateful_session = await session_service_stateful.create_session(
         app_name=APP_NAME,
