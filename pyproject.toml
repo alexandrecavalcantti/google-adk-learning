@@ -1,0 +1,14 @@
+[project]
+name = "google-adk-learning"
+version = "0.1.0"
+description = "Todos os meus códigos, anotações, exemplos práticos e experimentos usados para aprender o máximo sobre o Google ADK. Ideal para consulta, aprendizado e referência rápida sobre agentes, automações e melhores práticas na plataforma."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk>=1.3.0",
+    "google-generativeai>=0.8.5",
+    "litellm>=1.72.6",
+    "psutil>=7.0.0",
+    "python-dotenv>=1.1.0",
+    "yfinance>=0.2.63",
+]
